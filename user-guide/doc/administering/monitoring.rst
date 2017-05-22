@@ -1,4 +1,4 @@
-..monitoring-xxx-ug
+.. _monitoring-xxx-ug:
 
 =================
 Monitoring

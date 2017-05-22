@@ -1,4 +1,4 @@
-.._roles-permissions-xxx-ug:
+.. _roles-permissions-xxx-ug:
 
 =====================
 Roles and permissions

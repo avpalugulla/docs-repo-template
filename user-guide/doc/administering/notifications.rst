@@ -1,4 +1,4 @@
-.._notifications-xxx-ug
+.. _notifications-xxx-ug:
 
 =============
 Notifications
