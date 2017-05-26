@@ -1,5 +1,8 @@
 {
-  "contentIDBase": "https://github.com/rackerlabs/rackspace-how-to/",
-  "githubUrl": "https://github.com/rackerlabs/rackspace-how-to/",
-  "githubBranch": "master"
+  "contentIDBase": "https://github.com/rackerlabs/docs-repo-name/book-name/",
+  "githubUrl": "https://github.com/rackerlabs/docs-rackspace/",
+  "githubBranch": "master",
+  "meta": {
+    "preferGithubIssues": true
+  }
 }
