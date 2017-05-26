@@ -1,9 +1,8 @@
-title: InfoDev Newsletter
-email: info-dev@rackspace.com
+title: <SITE TITLE>
+email: <TEAM EMAIL>
 description: >
-  All of the information development newsletters from the info dev team
-  at Rackspace. Internal use only.
-baseurl: "/IX/infodev-newsletter" # the subpath of your site, e.g. /blog
+  <MULTI-LINE DESCRIPTION>
+baseurl: "/<ORG_NAME_OR_USERNAME>/<REPO_NAME>"
 url: "https://pages.github.rackspace.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings

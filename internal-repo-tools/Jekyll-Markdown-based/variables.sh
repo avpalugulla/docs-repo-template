@@ -1,6 +1,6 @@
 #! /bin/sh
 
-buildpath='docs/_build/html'
+buildpath='_site'
 buildstatic=$( ls -d $buildpath/* )
 buildfolder=$( ls -d $buildpath/*/ )
 
