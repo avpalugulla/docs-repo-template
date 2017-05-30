@@ -2,11 +2,10 @@
 
 set -e
 source /opt/rh/rh-git29/enable
-# source /opt/rh/python27/enable
-# virtualenv jenkinspy2
-# source jenkinspy2/bin/activate
-# python -V
-# pip install --upgrade pip
-# pip install -r requirements.txt
-# make htmlvers
-# git branch -vv
+git branch -vv
+npm install
+mkdir $WORKSPACE/docs/_build/html
+for filename in *.raml; do
+  output_html='$WORKSPACE/docs/_build/html/$filename.html'
+  raml2html $filename > $output_html
+done

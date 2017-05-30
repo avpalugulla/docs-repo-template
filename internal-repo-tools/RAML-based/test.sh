@@ -4,13 +4,9 @@ set -e
 echo "enable git new"
 source /opt/rh/rh-git29/enable
 git branch -vv
-# source /opt/rh/python27/enable
-# virtualenv jenkinstox2
-# source jenkinstox2/bin/activate
-# cd docs/
-# pip install --upgrade pip
-# pip --version
-# pip install tox
-# tox -e checksyntax
-# tox -e checkbuild
-# #python -m tox -e checkspelling    until it works :p
+npm install
+mkdir docs/_build/html
+for filename in *.raml; do
+  output_html='$WORKSPACE/docs/_build/html/$filename.html'
+  raml2html $filename > $output_html
+done
