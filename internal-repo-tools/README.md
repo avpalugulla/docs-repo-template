@@ -42,6 +42,19 @@ markup language used for the documentation in the repo.
 
 ## Use
 
+First, add the `InfoDev-docbuild-svc` service account as an admin collaborator
+on your repo. Notify the [IX tools team](mailto:devdocs@rackspace.com) that you
+have a new repository to add to Jenkins so they know to go accept the
+invitation to your repo on the service account.
+
 Take the relevant shell script files and the Jenkinsfile from this directory,
 and put them in the root of your repo. Replace the following lines in the
 Jenkinsfile to match your repo:
+
+### Markdown-based
+
+
+### RAML-based
+
+
+### RST-based
