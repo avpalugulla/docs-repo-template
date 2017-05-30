@@ -9,6 +9,10 @@ build, and publish documentation automatically. GitHub Pages is a native
 publication platform for GitHub repos that is built on Jekyll, a static site
 generator.
 
+[Workflow](#workflow)
+[Under the Hood](#under-the-hood)
+[Use](#use)
+
 ## Workflow
 
 In an internal repo already set up with Jenkins, the process for publication is
@@ -48,13 +52,46 @@ have a new repository to add to Jenkins so they know to go accept the
 invitation to your repo on the service account.
 
 Take the relevant shell script files and the Jenkinsfile from this directory,
-and put them in the root of your repo. Replace the following lines in the
-Jenkinsfile to match your repo:
+and put them in the root of your repo. Replace the following elements in the
+files to match your repo:
+
+[Markdown-based](#markdown-based)
+[RAML-based](#raml-based)
+[RST-based](#rst-based)
 
 ### Markdown-based
 
+1.  Replace all instances of `<ORG_NAME_OR_USERNAME>` to match your GitHub
+    Enterprise organization (preferred; for example, `IX`) or username (for
+    example, `laur0616`).
+1.  Replace all instances of `<REPO>` to match the name of the repository where
+    you are working (for example, `handbook`).
+1.  In `_config.yml` specifically,
+    1.  Replace `<SITE TITLE>` with the title of your documentation (for
+        example, `Rackspace Engineering Handbook`).
+    1.  Replace `<TEAM EMAIL>` with your team's email address.
+    1.  Replace `<MULTI-LINE DESCRIPTION>` with a short description of your
+        product (for example, `A handbook for any engineer at Rackspace.`). The
+        description can take up multiple lines.
 
 ### RAML-based
 
+1.  Replace all instances of `<ORG_NAME_OR_USERNAME>` to match your GitHub
+    Enterprise organization (preferred; for example, `IX`) or username (for
+    example, `laur0616`).
+1.  Replace all instances of `<REPO>` to match the name of the repository where
+    you are working (for example, `handbook`).
 
 ### RST-based
+
+1.  Replace all instances of `<ORG_NAME_OR_USERNAME>` to match your GitHub
+    Enterprise organization (preferred; for example, `IX`) or username (for
+    example, `laur0616`).
+1.  Replace all instances of `<REPO>` to match the name of the repository where
+    you are working (for example, `handbook`).
+1.  In `conf.py` specifically,
+    1.  Replace all instances of `<OFFICIAL PROJECT NAME>` with your project's
+        official name (for example, `Rackspace Engineering Handbook`).
+    1.  Replace `<YEAR>` with the current year.
+1.  *(Optional)* Add your project name and any special terms to
+    `spelling_wordlist.txt`.
