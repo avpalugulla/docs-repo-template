@@ -51,6 +51,10 @@ on your repo. Notify the [IX tools team](mailto:devdocs@rackspace.com) that you
 have a new repository to add to Jenkins so they know to go accept the
 invitation to your repo on the service account.
 
+**Note:** Adding the service account lets Jenkins have access to your repo to
+publish your pages, comment on PRs with staging links, and send status updates
+on PRs. If you don't add it, Jenkins won't be able to publish your site.
+
 Take the relevant shell script files and the Jenkinsfile from this directory,
 and put them in the root of your repo. Replace the following elements in the
 files to match your repo:
@@ -93,5 +97,5 @@ files to match your repo:
     1.  Replace all instances of `<OFFICIAL PROJECT NAME>` with your project's
         official name (for example, `Rackspace Engineering Handbook`).
     1.  Replace `<YEAR>` with the current year.
-1.  *(Optional)* Add your project name and any special terms to
-    `spelling_wordlist.txt`.
+1.  *(Required if your project has special terms or a special name)* Add your
+    project name and any special terms to `spelling_wordlist.txt`.
