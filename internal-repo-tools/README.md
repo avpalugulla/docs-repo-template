@@ -9,9 +9,9 @@ build, and publish documentation automatically. GitHub Pages is a native
 publication platform for GitHub repos that is built on Jekyll, a static site
 generator.
 
-[Workflow](#workflow)
-[Under the Hood](#under-the-hood)
-[Use](#use)
+-   [Workflow](#workflow)
+-   [Under the Hood](#under-the-hood)
+-   [Use](#use)
 
 ## Workflow
 
@@ -55,9 +55,9 @@ Take the relevant shell script files and the Jenkinsfile from this directory,
 and put them in the root of your repo. Replace the following elements in the
 files to match your repo:
 
-[Markdown-based](#markdown-based)
-[RAML-based](#raml-based)
-[RST-based](#rst-based)
+-   [Markdown-based](#markdown-based)
+-   [RAML-based](#raml-based)
+-   [RST-based](#rst-based)
 
 ### Markdown-based
 
