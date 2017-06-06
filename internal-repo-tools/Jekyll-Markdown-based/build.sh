@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash -l
 
 set -e
 source /opt/rh/rh-git29/enable

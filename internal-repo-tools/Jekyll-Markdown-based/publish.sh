@@ -1,5 +1,6 @@
 #!/bin/sh
 
+set -e
 # Enable the newest verion available for git.
 source /opt/rh/rh-git29/enable
 # For debugging, check that the branches are both there.
