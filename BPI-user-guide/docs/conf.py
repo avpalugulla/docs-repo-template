@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-<OFFICIAL PROJECT NAME> documentation build configuration file.
+Rackspace Dedicated Load Balancer
+documentation build configuration file.
 
 This file is execfile()d with the current directory set to its
 containing dir.
