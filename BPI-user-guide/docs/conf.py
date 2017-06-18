@@ -85,8 +85,8 @@ master_doc = 'index'
 # builder = 'deconst-serial'
 
 # General information about the project.
-project = '<OFFICIAL PROEJCT NAME>'
-copyright = '<YEAR>, Rackspace'
+project = 'Rackspace Dedicated Load Balancer'
+copyright = '2017, Rackspace'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
