@@ -1,7 +1,7 @@
 source: ./content
-destination: ./how-to
+destination: ./<base-url>
 
-baseurl: "/how-to/"
+baseurl: "<base-url>"
 
 defaults:
   -
