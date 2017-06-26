@@ -4,12 +4,12 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.rackspace.com/<ORG_NAME_OR_USERNAME>/<REPO>.git"
+    "url": "git+https://github.rackspace.com/<orgNameOrUsername>/<repoName>.git"
   },
   "bugs": {
-    "url": "https://github.rackspace.com/<ORG_NAME_OR_USERNAME>/<REPO>/issues"
+    "url": "https://github.rackspace.com/<orgNameOrUsername>/<repoName>/issues"
   },
-  "homepage": "https://github.rackspace.com/<ORG_NAME_OR_USERNAME>/<REPO>#readme",
+  "homepage": "https://github.rackspace.com/<orgNameOrUsername>/<repoName>#readme",
   "devDependencies": {
     "raml2html": "^6.3.0"
   },
