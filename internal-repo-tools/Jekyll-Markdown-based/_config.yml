@@ -1,0 +1,15 @@
+title: <Site Title>
+email: <team@email>
+description: >
+  <multiLineDescription>
+baseurl: "/<orgNameOrUsername>/<repoName>"
+url: "https://pages.github.rackspace.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
