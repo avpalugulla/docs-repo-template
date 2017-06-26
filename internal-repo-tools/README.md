@@ -118,6 +118,17 @@ files to match your repo by using a search-and-replace system, such as the repos
     example, `laur0616`).
 1.  Replace all instances of `<repoName>` to match the name of the repository where
     you are working (for example, `handbook` or `handbookModule-RPC`).
+1.  In the index.raml file, copy and replace the `<ramlNames>` and `<raml-file-name>` placeholders with the names of your RAML files (the filename without `.raml` at the end). Example:
+
+        #%RAML 1.0
+        ---
+        title: Index
+        documentation:
+          - title: API index
+            content: |
+            [My RAML 1](my-raml-1.html)
+            [My RAML 2](my-raml-2.html)
+            [My RAML 3](my-raml-3.html)
 
 #### RST-based
 
