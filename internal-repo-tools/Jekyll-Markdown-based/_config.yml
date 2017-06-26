@@ -1,8 +1,8 @@
-title: <SITE TITLE>
-email: <TEAM EMAIL>
+title: <Site Title>
+email: <team@email>
 description: >
-  <MULTI-LINE DESCRIPTION>
-baseurl: "/<ORG_NAME_OR_USERNAME>/<REPO_NAME>"
+  <multiLineDescription>
+baseurl: "/<orgNameOrUsername>/<repoName>"
 url: "https://pages.github.rackspace.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
