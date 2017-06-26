@@ -1,0 +1,19 @@
+{
+  "name": "raml-builder",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.rackspace.com/<orgNameOrUsername>/<repoName>.git"
+  },
+  "bugs": {
+    "url": "https://github.rackspace.com/<orgNameOrUsername>/<repoName>/issues"
+  },
+  "homepage": "https://github.rackspace.com/<orgNameOrUsername>/<repoName>#readme",
+  "devDependencies": {
+    "raml2html": "^6.3.0"
+  },
+  "dependencies": {
+    "raml2html": "^6.3.0"
+  }
+}
