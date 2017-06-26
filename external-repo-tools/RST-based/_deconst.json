@@ -1,8 +1,8 @@
 {
-    "contentIDBase": "https://github.com/rackerlabs/docs-rpc/master/",
-    "githubUrl": "https://github.com/rackerlabs/docs-rackspace/",
-    "githubBranch": "master",
-    "meta": {
-        "preferGithubIssues": true
-    }
+  "contentIDBase": "https://github.com/rackerlabs/<REPO>/<BOOK-NAME>/",
+  "githubUrl": "https://github.com/rackerlabs/<REPO>/",
+  "githubBranch": "master",
+  "meta": {
+    "preferGithubIssues": true
+  }
 }
