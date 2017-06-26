@@ -18,7 +18,7 @@ def notifyGitHub(text) {
     script: "echo ${BRANCH_NAME} | cut -d '-' -f '2'",
     returnStdout: true
   ).trim()
-  def startIt='https://github.rackspace.com/api/v3/repos/<ORG_NAME_OR_USERNAME>/<REPO>/issues/'
+  def startIt='https://github.rackspace.com/api/v3/repos/<orgNameOrUsername>/<repoName>/issues/'
   def startURL="${startIt}${numberPR}"
   println startURL
   def startOfEnd='/comments --data \'{"body":"'
@@ -54,11 +54,11 @@ node {
       // Checkout behavior explicit definition because the plugin downloads
       // things differently depending on what it's looking at.
       if (isPR) {
-        checkout scm:[$class: 'GitSCM', userRemoteConfigs: [[credentialsId: 'githubSvc', url: 'ssh://git@github.rackspace.com/<ORG_NAME_OR_USERNAME>/<REPO>.git']]]
+        checkout scm:[$class: 'GitSCM', userRemoteConfigs: [[credentialsId: 'githubSvc', url: 'ssh://git@github.rackspace.com/<orgNameOrUsername>/<repoName>.git']]]
         sh "git fetch origin pull/'${numberPR}'/head:'${BRANCH_NAME}'"
         sh "git checkout '${BRANCH_NAME}'"
       } else {
-        checkout scm:[$class: 'GitSCM', userRemoteConfigs: [[credentialsId: 'githubSvc', url: 'git@github.rackspace.com:<ORG_NAME_OR_USERNAME>/<REPO>.git']]]
+        checkout scm:[$class: 'GitSCM', userRemoteConfigs: [[credentialsId: 'githubSvc', url: 'git@github.rackspace.com:<orgNameOrUsername>/<repoName>.git']]]
         sh 'git checkout master'
       }
       sh 'git branch -t gh-pages origin/gh-pages'
@@ -75,7 +75,7 @@ node {
     if (isPR) {
       stage ('Stage') {
         echo "staging..."
-        notifyGitHub("Staging at " + BUILD_URL + "execution/node/5/ws/docs/_build/html/index.html")
+        notifyGitHub("Staging at " + BUILD_URL + "execution/node/5/ws/_site/index.html")
       }
       echo "it was a PR, so ending here"
     } else {
